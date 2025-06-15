@@ -1,0 +1,168 @@
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Starbucks -Promociones</title>
+  <link rel="icon" href="imagenes/logosta.png" type="image/png">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #F4F1EE;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    nav {
+      background-color: #00704A;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+
+    .logo-img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+
+    .logo-text {
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      padding-bottom: 4px;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+      color: #1abc9c;
+      border-bottom: 2px solid #1abc9c;
+    }
+
+    .container {
+      width: 90%;
+      margin: 30px auto;
+    }
+
+    h1 {
+      text-align: center;
+      color: #31465c;
+      margin-bottom: 40px;
+    }
+
+    .ad {
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .ad img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .ad-content {
+      flex-grow: 1;
+    }
+
+    .ad-content h2 {
+      margin-top: 0;
+      color: #00704A;
+    }
+
+    footer {
+      background-color: #2e2e2e;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <!--  -->
+  <nav>
+    <a href="index.html" class="logo-container">
+      <img src="imagenes/logosta.png" alt="Logo Starbucks " class="logo-img">
+      <span class="logo-text">Starbucks </span>
+    </a>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="menu.html">Menú</a></li>
+      <li><a href="promociones.html" class="active">Promociones</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contenido -->
+  <div class="container">
+    <h1>¡Descubre nuestras novedades!</h1>
+
+   
+
+    <div class="ad">
+  <img src="imagenes/pinkfrio.png" alt="Pink Drink">
+  <div class="ad-content">
+    <h2>¡Pink Drink al 50% al comprar 2 en línea!</h2>
+    <p>Si el café no es lo tuyo, esta bebida pastel se convertirá en tu nueva mejor amiga. Hecha con refrescante leche de coco, fresas naturales y una base de fresa con açai, es ligera, afrutada y perfecta para el verano.</p>
+    <p><strong>Promoción exclusiva en línea:</strong> Llévate 2 Pink Drinks y obtén un 50% de descuento en la segunda. ¡No te quedes sin la bebida más icónica del verano!</p>
+  </div>
+</div>
+
+
+    <div class="ad">
+      <img src="imagenes/frs.png" alt="Frapuccino">
+      <div class="ad-content">
+        <h2>2x1 en Frapuccinos</h2>
+        <p>Este fin de semana disfruta de nuestros Frapuccinos favoritos con promoción 2x1. ¡Ideal para compartir con quien más quieres!</p>
+      </div>
+    </div>
+
+    <div class="ad">
+      <img src="imagenes/temp.jpg" alt="Cake pops">
+      <div class="ad-content">
+        <h2>Cake Pops de temporada</h2>
+        <p>Descubre nuestros nuevas <strong>Cake Pop</strong>: diferentes sabores y decorados acorde ala temporada.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pie de página -->
+  <footer>
+    &copy; 2025 Starbucks  · Todos los derechos reservados
+  </footer>
+
+</body>
+</html>

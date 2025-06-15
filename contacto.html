@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Starbucks- Contacto</title>
+  <link rel="icon" href="imagenes/logosta.png" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+
+
+  .boton-comentario {
+    background-color: #006644;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+
+  .boton-comentario:hover {
+    background-color: #005f3c;
+  }
+
+
+
+
+
+
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #F4F1EE;
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    nav {
+      background-color: #00704A;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+
+    .logo-img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+
+    .logo-text {
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      transition: color 0.3s, border-bottom 0.3s;
+      padding-bottom: 4px;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+      color: #1abc9c;
+      border-bottom: 2px solid #1abc9c;
+    }
+
+    .contact-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 20px;
+      gap: 40px;
+    }
+
+    .contact-info {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .contact-info h2 {
+      font-size: 28px;
+      color: #2c3e50;
+      margin-bottom: 20px;
+    }
+
+    .contact-info p, .contact-info li {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 8px;
+    }
+
+    .contact-info ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .contact-info i {
+      margin-right: 10px;
+      color: #00704A;
+    }
+
+    .contact-image {
+      flex: 1;
+      min-width: 280px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .contact-image img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    footer {
+      background-color: #2e2e2e;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+      font-size: 14px;
+    }
+
+    /* Animación del café */
+    .coffee {
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      animation: moveCoffee 25s linear infinite;
+      z-index: 999;
+    }
+
+    @keyframes moveCoffee {
+      0%   { top: 0; left: 0; transform: rotate(0deg); }
+      25%  { top: 80%; left: 20%; transform: rotate(20deg); }
+      50%  { top: 40%; left: 60%; transform: rotate(-15deg); }
+      75%  { top: 70%; left: 90%; transform: rotate(10deg); }
+      100% { top: 0; left: 0; transform: rotate(0deg); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Na -->
+  <nav>
+    <a href="index.html" class="logo-container">
+      <img src="imagenes/logosta.png" alt="Logo Starbucks " class="logo-img">
+      <span class="logo-text">Starbucks </span>
+    </a>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="menu.html">Menú</a></li>
+      <li><a href="promociones.html">Promociones</a></li>
+      <li><a href="contacto.html" class="active">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- SCB -->
+  <section class="contact-section">
+    <div class="contact-info">
+      <h2>Contáctanos</h2>
+      <ul>
+        <li><i class="fas fa-phone-alt"></i> Tel: +52 123 456 7890</li>
+        <li><i class="fab fa-whatsapp"></i> WhatsApp: +52 123 456 7890</li>
+        <li><i class="fab fa-facebook"></i> Facebook: StarbucksApatz</li>
+        <li><i class="fab fa-instagram"></i> Instagram: @StarbucksApatz</li>
+        <li><i class="fab fa-tiktok"></i> TikTok: @StarbucksApatz</li>
+        <li><i class="fas fa-envelope"></i> contacto@StarbucksApatz85.com</li>
+      </ul>
+
+      <h3>Horario de atención</h3>
+      <ul>
+        <li><strong>Ordenar en sucursal:</strong> 8:00 AM – 9:00 PM</li>
+        <li><strong>Ordenar en línea:</strong> 10:00 AM – 8:30 PM</li>
+      </ul>
+
+      <h3>Dirección</h3>
+      <ul>
+        <li><strong>Calle:</strong> Avenida 1814 Sur </li>
+        <li><strong>Colonia:</strong> Centro</li>
+        <li><strong>Apatzingan, Michoacán</strong></li>
+      </ul>
+    </div>
+
+    <div class="contact-image">
+      <img src="imagenes/cokkj.jpg" alt="Imagen de contacto o sucursal">
+    </div>
+  </section>
+
+
+<section class="comentarios">
+  <!-- HTML + JS COMENPAG-->
+
+<h2 style="color:#0f0101;">Deja tu comentario o sugerencia</h2>
+<textarea id="comentario" placeholder="Escribe tu opinión..." rows="4" cols="50" style="padding:10px; border-radius:6px; border:1px solid #ccc; width:100%; max-width:600px;"></textarea>
+<br><br>
+<button onclick="agregarComentario()" class="boton-comentario">Agregar comentario</button>
+
+<h3 style="margin-top:30px;">Comentarios:</h3>
+<ul id="listaComentarios" style="list-style: none; padding-left: 0;"></ul>
+
+<script>
+  function agregarComentario() {
+    const comentario = document.getElementById("comentario").value;
+    if (comentario.trim() !== "") {
+      const lista = document.getElementById("listaComentarios");
+      const nuevoComentario = document.createElement("li");
+      nuevoComentario.textContent = comentario;
+      nuevoComentario.style.padding = "10px";
+      nuevoComentario.style.borderBottom = "1px solid #ccc";
+      lista.appendChild(nuevoComentario);
+      document.getElementById("comentario").value = "";
+    }
+  }
+</script>
+
+</section>
+
+
+  <!-- Pie de página -->
+  <footer>
+    &copy; 2025 Starbucks  · Todos los derechos reservados
+  </footer>
+
+</body>
+</html>

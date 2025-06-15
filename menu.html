@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Starbuck- Menu </title>
+  <link rel="icon" href="imagenes/logosta.png" type="image/png">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #F4F1EE;
+      color: #333;
+    }
+
+    /* Ba*/
+    nav {
+      background-color: #32df9c;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+
+    .logo-img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+
+    .logo-text {
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li {
+      display: inline;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      transition: color 0.3s, border-bottom 0.3s;
+      padding-bottom: 4px;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+      color: #1abc9c;
+      border-bottom: 2px solid #1abc9c;
+    }
+
+    footer {
+      background-color: #2e2e2e;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+      font-size: 14px;
+    }
+
+    /* E */
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #00704A;
+      text-align: center;
+    }
+
+    .category {
+      background-color: #99D6C2;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .category h2 {
+      color: #2c3e50;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 5px;
+    }
+
+    .product {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .product img {
+      width: 80px;
+      height: 80px;
+      margin-right: 15px;
+      border-radius: 5px;
+      object-fit: cover;
+    }
+
+    .product label {
+      font-size: 18px;
+      flex-grow: 1;
+    }
+
+    .price {
+      font-size: 16px;
+      color: #27ae60;
+    }
+
+    button {
+      background-color: #00704A;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      display: block;
+      margin: 20px auto 0;
+    }
+
+    button:hover {
+      background-color: #00704A;
+    }
+
+    .popup {
+      display: none;
+      position: fixed;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      z-index: 999;
+      width: 300px;
+    }
+
+    .popup button {
+      background-color: #c0392b;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+
+    .popup button:hover {
+      background-color: #a93226;
+    }
+
+    .popup .order-summary {
+      margin-top: 15px;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Nrior -->
+  <nav>
+    <a href="index.html" class="logo-container">
+      <img src="imagenes/logosta.png" alt="Logo Starbucks " class="logo-img">
+      <span class="logo-text">Starbucks </span>
+    </a>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="menu.html" class="active">Menú</a></li>
+      <li><a href="promociones.html">Promociones</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- Con -->
+  <div class="container">
+    <h1>Menú</h1>
+
+   <!-- BC-->
+<div class="category">
+  <h2>Bebidas Calientes</h2>
+  <div class="product">
+    <img src="imagenes/Espresso.png" alt="Espresso" />
+    <label><input type="checkbox" id="BC1"> Espresso<br><small>Hecho con café molido 100% arábica y agua caliente.</small></label>
+    <span class="price">$60.00</span>
+  </div>
+  <div class="product">
+    <img src="imagenes/cafedia.png" alt="Café del Día" />
+    <label><input type="checkbox" id="BC2"> Café del Día<br><small>Mezcla de granos arábica recién molidos y agua filtrada.</small></label>
+    <span class="price">$60.00</span>
+  </div>
+</div>
+
+
+<!-- Frapu -->
+<div class="category">
+  <h2>Frapuccino</h2>
+  <div class="product">
+    <img src="imagenes/mochablanc.png" alt="Mocha Blanco" />
+    <label>
+      <input type="checkbox" id="F1"> Mocha Blanco<br>
+      <small> Una mezcla de chocolate blanco con café, hielo y leche, podría ser lo mejor que te pudiera pasar en todo el día.</small>
+    </label>
+    <span class="price">$89.00</span>
+  </div>
+  <div class="product">
+    <img src="imagenes/caramelf.png" alt="Caramel" />
+    <label>
+      <input type="checkbox" id="F2"> Caramel<br>
+      <small> El jarabe de caramelo se encuentra con el café, la leche y el hielo para una cita en la licuadora, mientras que la crema batida y la salsa de caramelo con mantequilla cubren de amor por encima.</small>
+    </label>
+    <span class="price">$89.00</span>
+  </div>
+</div>
+
+
+<!-- BeG -->
+<div class="category">
+  <h2>Bebidas Frías</h2>
+  <div class="product">
+    <img src="imagenes/lemonteafrio.png" alt="Helado Shaken Lemon Tea" />
+    <label><input type="checkbox" id="BF1"> Helado Shaken Lemon Tea<br><small>Helada y deliciosa bebida a base de Té negro con limonada y ligeramente endulzado..</small></label>
+    <span class="price">$99.00</span>
+  </div>
+  <div class="product">
+    <img src="imagenes/pinkfrio.png" alt="Pink Drink" />
+    <label><input type="checkbox" id="BF2"> Pink Drink<br><small>Nuestro clásico Strawberry Acaí con un toque de leche de coco.</small></label>
+    <span class="price">$120.00</span>
+  </div>
+  <div class="product">
+    <img src="imagenes/acaifrio.png" alt="Strawberry Acai Frozen Refresh" />
+    <label><input type="checkbox" id="BF3"> Strawberry Acai Frozen Refresh<br><small>Una refrescante mezcla de jugos de fruta con sabores intensos (fresa y acai), extracto de café verde y trozos de frutas liofilizadas mezclados con limonada y hielo.</small></label>
+    <span class="price">$99.00</span>
+  </div>
+<div class="product">
+    <img src="imagenes/mangodrafrio.png" alt="Mango Dragonfruit Refresher" />
+    <label><input type="checkbox" id="BF4"> Mango Dragonfruit Refresher<br><small>Nuestro exclusivo extracto de café verde mezclado con un refrescante concentrado de frutas (mango y pitahaya), infusiones de pitahaya y hielo.</small></label>
+    <span class="price">$125.00</span>
+  </div>
+
+
+  <div class="product">
+    <img src="imagenes/tendenciabr.png" alt="Brown Sugar Shaken Espresso Helado" />
+    <label><input type="checkbox" id="BF5"> Brown Sugar Shaken Espresso Helado<br><small> Espresso rubio agitado con jarabe de azúcar moreno, un toque de canela y cremosa leche de avena. Refrescante, aromático y 100% vegano. Ideal para quienes buscan una bebida dulce, equilibrada y sin lácteos</small></label>
+    <span class="price">$130.00</span>
+  </div>
+
+</div>
+
+<!-- AliKL -->
+<div class="category">
+  <h2>Alimentos</h2>
+  <div class="product">
+    <img src="imagenes/pavo.png" alt="Sándwich de Pavo y Panela" />
+    <label><input type="checkbox" id="Ali1"> Sándwich de Pavo y Panela<br><small>Preparado con pan multigrano (trigo, centeno, avena, semillas), queso panela, jamón de pechuga de pavo, espinaca y/o lechuga, y aderezo de yogurt con mayonesa, crema, especias y conservadores.</small></label>
+    <span class="price">$120.00</span>
+  </div>
+  <div class="product">
+    <img src="imagenes/calsica.png" alt="Baguette Clásica " />
+    <label><input type="checkbox" id="Ali2"> Baguette Clásica<br><small>Pan de trigo, pechuga de pavo con especias y conservadores, y aderezo cremoso con chipotle, mostaza, limón y especias</small></label>
+    <span class="price">$150.00</span>
+  </div>
+<div class="product">
+    <img src="imagenes/vainilla.jpg" alt="Cake Pop Vainilla " />
+    <label><input type="checkbox" id="Ali3"> Cake Pop Vainilla<br><small>Paleta de pastel en forma de esfera cubierta de Vainilla</small></label>
+    <span class="price">$40.00</span>
+  </div>
+
+<div class="product">
+    <img src="imagenes/chco.jpg" alt="Cake Pop Chocolate " />
+    <label><input type="checkbox" id="Ali4"> Cake Pop Chocolate<br><small>Paleta de pastel en forma de esfera cubierta de Chocolate </small></label>
+    <span class="price">$40.00</span>
+  </div>
+</div>
+
+
+    
+
+   
+
+   
+
+    <!-- BPT -->
+    <button onclick="realizarPedido()">Realizar Pedido</button>
+  </div>
+
+  <!-- Popup  -->
+  <div class="popup" id="popup">
+    <h3>¡Gracias por tu pedido!</h3>
+    <p>Tu pedido ha sido realizado con éxito.</p>
+    <div class="order-summary" id="orderSummary"></div>
+    <button onclick="cerrarPopup()">Cerrar</button>
+  </div>
+
+  <!-- SP -->
+  <script>
+    function realizarPedido() {
+      let orderSummary = '';
+      let total = 0;
+
+      const productos = [
+        { id: "BC1", nombre: "Espresso", precio: 60.00 },
+        { id: "BC2", nombre: "Café del Día", precio: 60.00 },
+        { id: "F1", nombre: "Frapuccino Mocha Blanco", precio: 89.00 },
+        { id: "F2", nombre: "Frapuccino Caramel", precio: 89.00 },
+        { id: "BF1", nombre: "Helado Shaken Lemon Tea", precio: 99.00 },
+        { id: "BF2", nombre: "Pink Drink", precio: 120.00 },
+        { id: "BF3", nombre: "Strawberry Acai Frozen Refresh", precio: 99.00 },
+        { id: "BF4", nombre: "Mango Dragonfruit Refresher", precio: 125.00 },
+     { id: "BF5", nombre: "Brown Sugar Shaken Espresso Helado", precio: 130.00 },
+        { id: "Ali1", nombre: "Sandwich de Pavo y Panela", precio: 120.00 },
+        { id: "Ali2", nombre: "baguette Clasica", precio: 150.00 },
+{ id: "Ali3", nombre: "Cake Pop vanilla", precio: 40.00 },
+{ id: "Ali4", nombre: "Cake Pop Chocolate", precio: 40.00 },
+      ];
+
+      productos.forEach(producto => {
+        const checkbox = document.getElementById(producto.id);
+        if (checkbox && checkbox.checked) {
+          orderSummary += `<p>${producto.nombre} - $${producto.precio.toFixed(2)}</p>`;
+          total += producto.precio;
+        }
+      });
+
+      orderSummary += `<p><strong>Total: $${total.toFixed(2)}</strong></p>`;
+      document.getElementById("orderSummary").innerHTML = orderSummary;
+      document.getElementById("popup").style.display = "block";
+    }
+
+    function cerrarPopup() {
+      document.getElementById("popup").style.display = "none";
+    }
+  </script>
+
+  <!-- Pie de página -->
+  <footer>
+    &copy; 2025 Starbucks  · Todos los derechos reservados
+  </footer>
+
+</body>
+</html>

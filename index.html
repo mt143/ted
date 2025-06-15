@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Starbucks</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="estilos.css">
+<link rel="icon" href="imagenes/logosta.png" type="image/png">
+  
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #F4F1EE;
+      color: #333;
+    }
+
+    /*N*/
+    nav {
+      background-color: #00704A;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+
+    .logo-img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+
+    .logo-text {
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      transition: color 0.3s, border-bottom 0.3s;
+      padding-bottom: 4px;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+      color: #1abc9c;
+      border-bottom: 2px solid #1abc9c;
+    }
+
+    /* B */
+    .content {
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    .content h2 {
+      font-size: 32px;
+      color: #2c3e50;
+      margin-bottom: 20px;
+    }
+
+    .content p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 30px;
+      background-color: #00704A;
+      color: white;
+      padding: 12px 24px;
+      text-decoration: none;
+      font-size: 16px;
+      border-radius: 6px;
+      transition: background-color 0.3s;
+    }
+
+    .button:hover {
+      background-color: #005f3c;
+    }
+
+    /* SVF */
+    .video-section {
+      position: relative;
+      height: 60vh;
+      overflow: hidden;
+    }
+
+    .video-section video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .video-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.4);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .video-overlay h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .video-overlay p {
+      font-size: 20px;
+    }
+
+    /* S */
+    .eco-section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      background-color: #e9f5f0;
+      padding: 60px 20px;
+      margin-top: 40px;
+    }
+
+    .eco-content {
+      flex: 1;
+      min-width: 280px;
+      padding: 20px;
+    }
+
+    .eco-content h2 {
+      color: #00704A;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .eco-content p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 12px;
+    }
+
+    .eco-video {
+      flex: 1;
+      min-width: 280px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .eco-video video {
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    
+
+    footer {
+      background-color: #2E2E2E;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- N -->
+  <nav>
+    <a href="index.html" class="logo-container">
+      <img src="imagenes/logosta.png" alt="Logo Capibara" class="logo-img">
+      <span class="logo-text">Starbucks</span>
+    </a>
+    <ul>
+      <li><a href="index.html" class="active">Inicio</a></li>
+      <li><a href="menu.html">Menú</a></li>
+      <li><a href="promociones.html">Promociones</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- SB -->
+  <div class="content">
+    <h2>Bienvenidos</h2>
+    <p>
+      En <strong>Starbucks,</strong>cada momento cuenta. Desde el primer café del día hasta esa última charla por la tarde, estamos aquí para ofrecerte mucho más que una bebida: una experiencia.</p>
+    <p>
+     Disfruta nuestras Bebidas del Momento y encuentra el complemento perfecto para cada ocasión.
+Explora nuestro menú y déjate consentir por el sabor y la calidez que nos distinguen.
+    </p>
+    <a class="button" href="promociones.html">Ver Promociones</a>
+  </div>
+
+  <!-- SVE-->
+  <section class="video-section">
+    <video autoplay muted loop playsinline>
+      <source src="videos/cafetera.mp4" type="video/mp4">
+      Tu navegador no soporta video.
+    </video>
+    <div class="video-overlay">
+      <div>
+        <h2>Pasión por el café</h2>
+        <p>Con cada taza, con cada conversacion, con cada comunidad, nutrimos las posibilidades ilimitadas de la conexion humana.</p>
+      </div>
+    </div>
+  </section>
+
+ <!-- SPK-->
+  <section class="eco-section">
+  <div class="eco-content">
+    <h2>Nuevo Pink Drink</h2>
+    <p>
+      Si el café no es lo tuyo, esta bebida pastel se convertirá en tu mejor opcion </p>
+    <p>
+      La <em>Pink Drink </em> comenzo como una creación de un fanático, pero se hizo tan popular que obtuvo un lugar oficial en el menú de Starbucks. Hecha con refrescante leche de coco, fresas y una base de fresa y açai, definitivamente es un imprescindible para el verano. “La bebida de Starbucks es simplemente el Refresher de Fresa y Açai de la cadena hecho con leche de coco y una porción de fresas en rodajas, y el resultado es ligero, refrescante y afrutado”,  </p>
+    <a href="menu.html" class="button">Ordena Ahora</a>
+  </div>
+    
+    <!-- IMA -->
+  <div class="eco-image-frame">
+    <img src="imagenes/roaa.webp" alt="Cake Pop">
+  </div>
+  </div>
+  
+</section>
+
+
+
+
+
+
+ <!-- SPPCK -->
+<section class="eco-section">
+  <div class="eco-content">
+    <h2>Cake Pop</h2>
+    <p>
+      El cake pop es un postre que ha ganado popularidad entre 2009 y 2011, obteniendo grandes ventas en Estados Unidos.  
+      Consta de una paleta de pastel en forma de esfera cubierta de glaseado o chocolate. Este producto tiene varias decoraciones y se adhieren a palos de chupetín.
+    </p>
+    <a href="menu.html" class="button">Ordena Ahora</a>
+  </div>
+
+  <!-- IMF -->
+  <div class="eco-image-frame">
+    <img src="imagenes/inipop.jpg" alt="Cake Pop">
+  </div>
+</section>
+
+
+
+
+
+
+
+
+  <!-- SC-->
+  <section class="eco-section">
+  <div class="eco-content">
+    <h2>Comprometidos con el medio ambiente</h2>
+    <p>
+      Trae tu termo reutilizable y recibe un <strong>10% de descuento</strong> en tus bebidas favoritas.
+    </p>
+    <p>
+      Únete a nuestra campaña  y forma parte del cambio. Cada taza cuenta.
+    </p>
+    <a href="menu.html" class="button">Ordena Ahora</a>
+  </div>
+  <!-- CV-->
+  <div class="eco-video-group">
+    <video autoplay muted loop playsinline width="600" height="400">
+      <source src="videos/ecologiava.mp4" type="video/mp4">
+      Tu navegador no soporta video.
+    </video>
+  </div>
+</section>
+
+
+
+  <!-- Pie de página -->
+  <footer>
+    &copy; 2025 Starbucks · Todos los derechos reservados
+  </footer>
+
+</body>
+</html>
